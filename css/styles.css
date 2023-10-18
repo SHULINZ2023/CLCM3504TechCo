@@ -1,0 +1,99 @@
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+#contact-header {
+    width: 100%;
+    height: 30em;
+    background: linear-gradient(to right, rgba(225, 0, 204, 0.6), rgba(51,51,153, 0.6)), url(../images/back.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: local;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 80%,
+        50% 100%,
+        0 80%
+    );
+    position: relative;
+}
+#contact-header span{
+    display: block;
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 10px #555;
+    font-size: 5em;
+    font-weight: 700;
+}
+#contact-info{
+    width: 70%;
+    margin: 2em auto;
+    font-size: 1.6em;
+    color: black;
+    line-height: 1.3em;
+}
+#contact-info ul{
+    list-style: none;
+    padding-left: 20px;
+    line-height: 2em;
+    font-size: 0.8em;
+}
+#contact-info ul li:before{
+    content: "\00BB \0020";
+    color: dodgerblue;
+    font-weight: 1000;
+}
+#contact-form-wrapper{
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    margin: 3em auto;
+    border-radius: 8px;
+    width: 60%;
+}
+#contact-form{
+    display: grid;
+    gap: 15px;
+}
+#contact-form .form-item{
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+}
+#contact-form label{
+    font-size: 1.2em;
+}
+#contact-form input, #contact-form textarea{
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#contact-form .button{
+    border-radius: 6px;
+    border: 0;
+    padding: 10px 0;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 0 5px grey;
+    background: linear-gradient(to right, rgba(225, 0, 204, 0.6), rgba(51, 51, 153, 0.6)), url(../images/back.jpg);
+}
+#contact-form .button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px grey, 0 0 5px rgb(106, 105, 105);
+    background: linear-gradient(to right, rgba(225, 0, 204, 0.8), rgba(51, 51, 153, 0.8)), url(../images/back.jpg);
+}
